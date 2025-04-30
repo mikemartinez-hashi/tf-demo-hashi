@@ -6,7 +6,7 @@ variable "region" {
 variable "instance_type" {
   type        = string
   description = "EC2 Instance Type"
-  default     = "t3.micro"
+  default     = "t2.micro"
 }
 
 # variable "ami" {
