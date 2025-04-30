@@ -6,19 +6,8 @@ variable "region" {
 variable "instance_type" {
   type        = string
   description = "EC2 Instance Type"
-  default     = "t2.micro"
+  default     = "t3.medium"
 }
-
-# variable "ami" {
-#   type        = string
-#   description = "AMI for EC2 Instance"
-# }
-
-# variable "allow_sg" {
-#   type        = string
-#   description = "AMI for EC2 Instance"
-#   default     = "sg-001c64f56592ce4ee"
-# }
 
 variable "key_name" {
   type        = string
