@@ -32,7 +32,7 @@ resource "aws_instance" "web_server" {
   user_data = templatefile("${path.module}/user_data.sh", {
     environment = var.environment
     region      = var.region
-    # owner       = var.owner
+    owner       = var.owner
   })
 }
 
