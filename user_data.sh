@@ -8,4 +8,4 @@ sudo yum install -y httpd
 sudo systemctl enable httpd
 sudo systemctl start httpd
 sudo systemctl status httpd
-echo "<html><head><title>Hello from my Terraform Sales Demo!</title></head><body><h1>Hello from the ${owner}'sTerraform Sales ${environment} Demo for ${region}!</h1></body></html>" | sudo tee /var/www/html/index.html > /dev/null
+echo "<html><head><title>Hello from my Terraform Demo!</title></head><body><h1>Hello from the ${owner}'sTerraform ${environment} Demo for ${region}!</h1></body></html>" | sudo tee /var/www/html/index.html > /dev/null
