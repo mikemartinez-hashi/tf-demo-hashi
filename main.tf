@@ -49,7 +49,7 @@ data "aws_ami" "amazon_linux_2" {
 
 # Create a Security Group to allow SSH and HTTP traffic
 resource "aws_security_group" "allow_ssh_and_http" {
-  name = "allow_ssh_and_http-${var.environment}"
+  name = "allow_ssh_and_http-${var.environment}-${var.server}"
 
   ingress {
     from_port   = 22
