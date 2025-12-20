@@ -30,9 +30,10 @@ resource "aws_instance" "web_server" {
   }
 
   user_data = templatefile("${path.module}/user_data.sh", {
-    environment = var.environment
-    region      = var.region
-    owner       = var.owner
+    environment        = var.environment
+    region             = var.region
+    owner              = var.owner
+    index_html_content = file("${path.module}/gs_site/index.html")
   })
 }
 

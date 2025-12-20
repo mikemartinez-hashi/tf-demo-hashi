@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troop Cookie Headquarters 2026</title>
+    <style>
+        /* --- CSS STYLES --- */
+        :root {
+            --gs-green: #00B451;
+            /* Official GS Green */
+            --gs-green-dark: #009341;
+            --alert-bg: #fff4e5;
+            --alert-text: #663c00;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: var(--gs-green);
+        }
+
+        .nav-btn {
+            background-color: var(--gs-green);
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .nav-btn:hover {
+            background-color: var(--gs-green-dark);
+        }
+
+        /* Hero Section */
+        header {
+            background-color: var(--gs-green);
+            /* Placeholder for Image */
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 3rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--gs-green);
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Action Buttons */
+        .btn {
+            display: inline-block;
+            background-color: var(--gs-green);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--gs-green);
+            color: var(--gs-green);
+        }
+
+        /* Training Alert Box */
+        .alert-box {
+            background-color: #e3f2fd;
+            border-left: 5px solid #2196F3;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Critical Requirement Box */
+        .critical-box {
+            background-color: var(--alert-bg);
+            border-left: 5px solid #ff9800;
+            padding: 1.5rem;
+        }
+
+        .critical-box h3 {
+            margin-top: 0;
+            color: var(--alert-text);
+        }
+
+        /* Event Grid */
+        .event-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 600px) {
+            .event-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .event-card {
+            background: #f4f4f4;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .date-badge {
+            background: #333;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        /* Links List */
+        .resource-list a {
+            display: block;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            color: var(--gs-green-dark);
+            text-decoration: none;
+        }
+
+        .resource-list a:hover {
+            background-color: #f9f9f9;
+            padding-left: 15px;
+            transition: 0.2s;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-logo">Troop Cookie HQ</div>
+        <a href="#booth-reporting" class="nav-btn">Report Booth Sales</a>
+    </nav>
+
+    <header>
+        <h1>2026 Cookie Season</h1>
+        <p>Helping our girls build confidence, skills, and funding our next adventure to <strong>Camp Fimfo</strong>!
+        </p>
+        <br>
+        <a href="https://www.girlscoutsrv.org/en/members/for-girl-scouts-and-families/cookie-central/rewards-for-cookie-sellers.html" class="btn" style="background: white; color: var(--gs-green);" target="_blank">Reward List</a>
+    </header>
+
+    <div class="container">
+
+        <div class="alert-box">
+            <h3 style="margin-top:0;">📢 Action Required: Cookie Training</h3>
+            <p>I will be hosting a parent-only training to walk through expectations. Please vote on the best date and
+                location.</p>
+            <a href="https://forms.gle/h3iBhzurTksRZ9Qt5" class="btn" target="_blank">Vote Here!</a>
+        </div>
+
+        <section id="booth-reporting" class="critical-box">
+            <h3>⚠️ New Requirement: Booth Sales Data</h3>
+            <p>All booth cookie sales <strong>must be recorded</strong> and submitted to the service unit to count
+                toward cookie bonus eligibility.</p>
+            <p><em>Example: "The Goat" – 40 boxes sold total.</em></p>
+            <a href="https://forms.gle/zUHHM3WqXSaF8cUk7" class="btn" style="background-color: #d84315;" target="_blank">Open Reporting Form</a>
+            <p style="font-size: 0.8rem; margin-top: 10px;">*Please fill this out immediately after every booth shift.*
+            </p>
+        </section>
+
+        <section>
+            <h2>Important Dates</h2>
+            <div class="event-grid">
+                <div class="event-card">
+                    <span class="date-badge">Jan 8, 2026</span>
+                    <h3>Cookie Q&A</h3>
+                    <p><strong>Where:</strong> Pflugerville First UMC</p>
+                    <p>Open to all adults. Get answers on Digital Cookie & sales from Service Unit volunteers.</p>
+                </div>
+                <div class="event-card">
+                    <span class="date-badge">Jan 11, 2026</span>
+                    <h3>Cookie Rally</h3>
+                    <p><strong>Where:</strong> Pflugerville Library</p>
+                    <p><strong>Time:</strong> 2:00 – 4:00 PM</p>
+                    <p>Fun motivation for the girls, planned by older Scouts! Parent & Scout rooms available.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Volunteer Opportunities</h2>
+            <p><strong>Mega Drop Volunteers Needed:</strong> If you’re available to help with cookie delivery logistics,
+                we would love the support!</p>
+            <ul>
+                <li>Volunteers must be 16+</li>
+                <li>No background check required</li>
+            </ul>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSde376skus2CKvjOCc8Hg0DjYuQq_pQBmTokDlMxANT2nkIXA/viewform"
+                target="_blank" class="btn btn-outline">Sign Up for Mega Drop</a>
+        </section>
+
+        <section>
+            <h2>Resources & Setup</h2>
+            <div class="resource-list">
+                <a href="https://www.girlscouts.org/content/dam/gsusa/forms-and-documents/cookies/volunteer-cookie-resources/20_GSUSA_4EasyStepsSetupDigitalCookieSite.pdf"
+                    target="_blank">
+                    📄 <strong>Digital Cookie Setup Guide</strong> <br>
+                    <span style="font-size:0.85rem; color:#666;">Step-by-step guide to setting up your site.</span>
+                </a>
+                <a href="https://www.girlscouts.org/en/members/for-volunteers/cookie-resources-troop-leaders-volunteer.html"
+                    target="_blank">
+                    🔗 <strong>GSCTX Volunteer Resources</strong> <br>
+                    <span style="font-size:0.85rem; color:#666;">Official guides and tools from Central Texas
+                        Council.</span>
+                </a>
+                <a href="#">
+                    💳 <strong>Square Setup (New Caregivers)</strong> <br>
+                    <span style="font-size:0.85rem; color:#666;">Look for an email invitation to set up credit card
+                        payments.</span>
+                </a>
+                <a href="#">
+                    📘 <strong>2026 Cookie Caregiver Guide</strong> <br>
+                    <span style="font-size:0.85rem; color:#666;">Includes safety rules, rewards, and money
+                        handling.</span>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Thank you for supporting our troop!</p>
+        <p>Questions? Contact Joanne</p>
+    </footer>
+
+</body>
+
+</html>
