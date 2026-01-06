@@ -30,10 +30,9 @@ resource "aws_instance" "web_server" {
   }
 
   user_data = templatefile("${path.module}/user_data.sh", {
-    environment        = var.environment
-    region             = var.region
-    owner              = var.owner
-    index_html_content = file("${path.module}/gs_site/index.html")
+    environment   = var.environment
+    region        = var.region
+    instance_type = var.instance_type
   })
 }
 
@@ -56,7 +55,7 @@ resource "aws_security_group" "allow_ssh_and_http" {
     from_port   = 443
     to_port     = 443
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"] # Allow SSH from anywhere (for demonstration purposes, restrict this in production)
+    cidr_blocks = ["0.0.0.0/0"] # Allow HTTPS from anywhere (for demonstration purposes, restrict this in production)
   }
 
   ingress {
