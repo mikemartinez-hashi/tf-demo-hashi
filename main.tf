@@ -54,7 +54,7 @@ data "aws_ami" "hc-base-ubuntu-2404" {
 
 # Create a Security Group to allow SSH and HTTP traffic
 resource "aws_security_group" "allow_ssh_and_http" {
-  name = "allow_ssh_and_http-${var.environment}-webserverdemo"
+  name = "allow_ssh_and_http-${var.environment}-webserverdemo-sg"
 
   ingress {
     from_port   = 443
