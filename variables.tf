@@ -6,8 +6,8 @@ variable "region" {
 variable "instance_type" {
   type        = string
   description = "EC2 Instance Type"
-  default     = "t3.medium"
-  # default     = "t3.large"
+  # default     = "t3.medium"
+  default     = "t3.large"
   # default     = "t3.micro"
 }
 
